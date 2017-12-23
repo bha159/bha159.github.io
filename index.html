@@ -5,6 +5,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.white {
+				color: white;
+			}
+			.featured img {
+				border-radius: 0 !important;
+			}
+			.container-fix {
+				display: flex;
+				flex-wrap: wrap;
+				align-content: stretch;
+				justify-content: space-around;
+			}
+			.container-fix > div {
+				align-items: stretch;
+				padding: 10px;
+				box-sizing: border-box;
+				/*max-width: 30% !important;*/
+			}
+			.style2 {
+				height: 100% !important;
+			}
+			.style4 {
+				padding-bottom: 10px;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -31,8 +57,7 @@
 								<h1>Hi. I'm <strong>Bharat Kumar</strong>.</h1>
 								<h2>Nice to meet you.</h2>
 							</header>
-							<p>I am an engineer trying to learn as much as possible, and want to become better version of myself.
-							<br>
+							<p><p class="white">I am an engineer trying to learn as much as possible, and want to become better version of myself.</p>
 							<a href="#work" class="button big scrolly">Explore</a>
 						</div>
 					</div>
@@ -83,8 +108,7 @@
 						<h2>Here’s some stuff I made.</h2>
 						<p>Take a look.</p>
 					</header>
-					<div class="container">
-						<div class="row">
+					<div class="container container-fix">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
 									<a href="_layouts/posts.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
@@ -106,8 +130,6 @@
 									<p>Implementation of classic game Space Shooter on FPGA using Verilog.</p>
 								</article>
 							</div>
-						</div>
-						<div class="row">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
 									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
@@ -129,7 +151,6 @@
 									<p>Servo motor stablizer controller and data transmitter using PIC 16F877A .</p>
 								</article>
 							</div>
-						</div>
 					</div>
 					<footer>
 						<p>Go to <a href="https://github.com/bha159">github</a> to see more of my projects.</p>
@@ -189,7 +210,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row extra-fix">
 							<div class="12u">
 								<hr />
 								<h3>Find me on ...</h3>
@@ -197,21 +218,6 @@
 									<li><a href="https://twitter.com/bha159753" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://www.linkedin.com/in/bha159/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/bha159" class="icon fa-github"><span class="label">Github</span></a></li>
-									<!--
-									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-									<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
-									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
-									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
-									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
-									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
-									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
-									-->
 								</ul>
 								<hr />
 							</div>
