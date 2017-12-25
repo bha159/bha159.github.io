@@ -1,14 +1,17 @@
-title: Blog
 email: bharat.159753@gmail.com
-description: Feel free to bookmark this, to keep an eye on my projects
-baseurl: "http://bha159.github.io" # the subpath of your site, e.g. /blog
+description: Feel free to bookmark this, to know about me and keep an eye on my projects.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bha159.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bha159753
 github_username:  bha159
 
 # Build settings
-permalink: /blog/:year/:month/:day/:title
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+

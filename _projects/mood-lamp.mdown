@@ -1,0 +1,5 @@
+---
+layout: post
+title: Mood Lamp
+---
+<p>Have to write stuff</p>

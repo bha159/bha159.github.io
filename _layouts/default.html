@@ -2,23 +2,33 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<link rel="stylesheet" href="../assets/css/main.css" />
+			<link rel="stylesheet" href="{{ site.data.global.url }}/assets/css/main.css" />
 		</head>
 		<body>
 			<nav id="nav">
-			<ul class="container">
-				<li><a href="../index.html#home">Home</a></li>
-				<li><a href="../index.html#work">Work</a></li>
-				<li><a href="../index.html#projects">Projects</a></li>
-				<li><a href="../index.html#portfolio">Portfolio</a></li>
-				<li><a href="../index.html#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<h1>Test</h1>
+				<ul class="container">
+					<li><a href="{{ site.data.global.url }}/index.html#home">Home</a></li>
+					<li><a href="{{ site.data.global.url }}/index.html#work">Work</a></li>
+					<li><a href="{{ site.data.global.url }}/index.html#projects">Projects</a></li>
+					<li><a href="{{ site.data.global.url }}/index.html#portfolio">Portfolio</a></li>
+					<li><a href="{{ site.data.global.url }}/index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- Content to be contained in blog -->
 			<div class="container">
 			
 			{{ content }}
 			
-			</div><!-- /.container -->
+			</div>
+
+			<!-- <div class="wrapper style4">
+				<h3>Find me on ...</h3>
+					<ul class="social">
+						<li><a href="https://twitter.com/bha159753" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/bha159/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/bha159" class="icon fa-github"><span class="label">Github</span></a></li>
+					</ul>
+			</div> -->
+
 		</body>
 	</html>

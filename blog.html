@@ -1,0 +1,12 @@
+---
+layout: default
+title: Bharat's Blog
+---
+	<h1>blank</h1><!-- Goes nowhere  -->
+	<h3>Here are articles I write.</h1>
+	<ul class="posts" style="list-style-type:disc">
+
+	  {% for post in site.posts %}
+	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
