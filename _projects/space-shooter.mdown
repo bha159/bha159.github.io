@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Space Shooter
 ---
 <p>Have to write stuff</p>

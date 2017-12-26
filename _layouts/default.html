@@ -4,6 +4,8 @@
 			<title>{{ page.title }}</title>
 			<link rel="stylesheet" href="{{ site.data.global.url }}/assets/css/main.css" />
 			{% include ganalytics.html %}
+			<meta name="description" content="{{ site.description }}">
+			<link rel="author" href="https://plus.google.com/u/0/109967318699885720571"/>
 		</head>
 		<body>
 			<nav id="nav">
@@ -22,14 +24,7 @@
 			
 			</div>
 
-			<!-- <div class="wrapper style4">
-				<h3>Find me on ...</h3>
-					<ul class="social">
-						<li><a href="https://twitter.com/bha159753" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.linkedin.com/in/bha159/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/bha159" class="icon fa-github"><span class="label">Github</span></a></li>
-					</ul>
-			</div> -->
-
+			{% include footer.html %}
+		
 		</body>
 	</html>

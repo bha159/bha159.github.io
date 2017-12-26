@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Ibot
 ---
 <p>Have to write stuff</p>

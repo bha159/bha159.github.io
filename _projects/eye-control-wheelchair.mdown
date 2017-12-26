@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Eye Controlled Wheelchair
 ---
 <p>Have to write stuff</p>
