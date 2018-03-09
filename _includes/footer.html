@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html>	
 	<body>
-	<!-- Footer -->
-	<div class="container">
-    <div class="row ">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8">
-        <h3>Like it? Then share it.</h3>
+		<!-- Footer -->
+		<div class="container">
+		    <div class="row ">
+		        <div class="">
+			        <h3 style="padding-bottom: 3px">Like it? Then share it.</h3>
+			        <!-- Twitter -->
+			        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			        <!-- Google + -->
+			        <div class="g-plus" data-action="share"></div>
+		    	</div>
+	    	</div>
+			<script src="https://apis.google.com/js/platform.js" async defer></script>
+			<!-- Comments On -->
+			{% if page.comments %}
+			<div id="disqus_thread"></div>
+			<script>
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.*/
+			var disqus_config = function () {
+				//var disqus_developer = 1; // Comment out when the site is live
+				this.page.url = bha159;  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
 
-        <!-- Twitter -->
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://bha159.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			{% endif %}
 
-        <!-- Google + -->
-        <div class="g-plus" data-action="share"></div>
-
-    </div>
-    </div>
-    <div class="col-xs-2"></div>
-	</div>
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<!-- Comments On -->
-	{% if page.comments %}
-	<div id="disqus_thread"></div>
-	<script>
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.*/
-	var disqus_config = function () {
-		//var disqus_developer = 1; // Comment out when the site is live
-		this.page.url = bha159;  // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = 'https://bha159.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	{% endif %}
-
-	<script id="dsq-count-scr" src="//bha159.disqus.com/count.js" async></script>
+			<script id="dsq-count-scr" src="//bha159.disqus.com/count.js" async></script>
+		</div>
 	</body>
 </html>
