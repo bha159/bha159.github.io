@@ -2150,3 +2150,11 @@ a
 	float: left;
 	margin: 0 0 3em 0;
 }
+/* Apna Kaam */
+.resize_fit_center 
+{
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+    padding: 10px;
+}
