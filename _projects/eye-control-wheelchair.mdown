@@ -3,4 +3,18 @@ layout: post
 comments: true
 title: Eye Controlled Wheelchair
 ---
-<p>Have to write stuff</p>
+<h1>Overview</h1>
+The objective of this project is to create a wheelchair which can be controlled by people suffering from such diseases where limbical movements is not possible to control wheelchair to use as a transportation device, such as paralysis. So eye movements of the user is used to determine if a user want to go in left direction or right direction or go straight. And closing eyes for some time means that user wants to stop.
+
+The project is divided into two parts:
+1) Eye Movement detection - The MATLAB Code dealing with detecting eye movement.
+2) Wheelchair Movement - An arduino is used to control wheelchair's motor which gets input from MATLAB to determines in which direction wheel should move.
+
+<h1>Eye Movement Detection</h1>
+To detect eye movements MATLAB code is used, a IP webcam is connected to WiFi on the same network as computer running MATLAB code. The IP address of IP webcam is passed to the program as input. After that program starts executing and logs are display on screen for calibration of thresholds for algorithm. This is done by asking user to look to left and right for some amount of time. After that code goes in infinite loop where actual movement detection happens. Voila-Jones algorithm is used to detect right and left eyes. The image is transformed using basic techniques like converting RGB image to grayscale and finally binary image. Final movement is detected by calculating the sum of white and black area in eroded binary images of left and right eye. This movement data is passed to Arduino using bluetooth.
+
+<h1>Wheelchair Movement</h1>
+The movement of wheelchair is controlled by Arduino which moves the motor in required direction after getting input from MATLAB detection code from Bluetooth sensor. The code is present <a href="https://gist.github.com/bha159/89c020a11d56afc3a7b371548ea7fee0">here.</a>
+
+<p></p>
+The complete github repo is situated <a href="https://github.com/bha159/Eye-Controlled-Wheelchair">here.</a>
